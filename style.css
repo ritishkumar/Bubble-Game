@@ -1,0 +1,177 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(155, 238, 202);
+}
+
+#pannel {
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#ptop {
+    padding: 0px 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(19, 109, 70);
+}
+
+.pside {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pside h2 {
+    font-weight: 500;
+}
+
+.box {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: rgb(8, 238, 138);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+#pbtm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    height: calc(100% - 100px);
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(18, 119, 57);
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.bubble:hover {
+    background-color: rgb(19, 109, 70);
+    cursor: pointer;
+}
+
+/* Media Queries for responsiveness */
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+    #pannel {
+        width: 90%;
+        height: 90%;
+    }
+    #ptop {
+        padding: 0px 20%;
+    }
+    .pside {
+        gap: 15px;
+    }
+    .box {
+        font-size: 20px;
+    }
+    .bubble {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 992px) {
+    #pannel {
+        width: 95%;
+        height: 95%;
+    }
+    #ptop {
+        padding: 0px 15%;
+    }
+    .pside {
+        gap: 10px;
+    }
+    .box {
+        font-size: 18px;
+    }
+    .bubble {
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    #pannel {
+        width: 98%;
+        height: 98%;
+    }
+    #ptop {
+        padding: 0px 10%;
+    }
+    .pside {
+        gap: 5px;
+    }
+    .box {
+        font-size: 15px;
+    }
+    .bubble {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+    #pannel {
+        width: 100%;
+        height: 100%;
+    }
+    #ptop {
+        padding: 0px 5%;
+    }
+    .pside {
+        gap: 0px;
+    }
+    .box {
+        font-size: 12px;
+    }
+    .bubble {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+}
